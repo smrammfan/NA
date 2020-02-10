@@ -63,7 +63,7 @@ void calculate(double eps, double x, int task) {
 	double sumL = 0;
 	double fourEPS = 4 * eps;
 
-	while (!(L < fourEPS)) {
+	while (L >= fourEPS) {
 		L = pow(a, 2 * n - 1) / (2 * n - 1);
 		n++;
 		sumL += L;
